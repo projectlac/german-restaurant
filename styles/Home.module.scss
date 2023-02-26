@@ -1,0 +1,47 @@
+.navigator {
+  width: 265px;
+  background-color: #161616;
+  padding: 30px;
+  height: 100vh;
+  color: #fff;
+  ul
+  {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    li {
+        font-size: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        transition: all 0.2s linear;
+    
+        &:hover {
+          color: #fab513;
+        }
+      }
+  } 
+  h5 {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 25px;
+  }
+  p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .logo {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+  }
+}
+.main {
+  background-color: #161616;
+  height: 100vh;
+  width: calc(100vw - 265px);
+ 
+}
