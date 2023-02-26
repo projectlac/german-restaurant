@@ -15,7 +15,7 @@ export default function Menu() {
       </Head>
       <main className={styles.main}>
         <iframe
-          src="http://flowpaper.com/flipbook/https://icseindia.org/document/sample.pdf"
+          src="https://flowpaper.com/flipbook/https://icseindia.org/document/sample.pdf"
           width="70%"
           height="800"
           style={{ border: "none" }}
