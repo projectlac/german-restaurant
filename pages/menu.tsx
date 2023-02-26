@@ -14,9 +14,13 @@ export default function Menu() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="sample-container-box">
-          <div className="sample-container"></div>
-        </div>
+        <iframe
+          src="http://flowpaper.com/flipbook/https://icseindia.org/document/sample.pdf"
+          width="70%"
+          height="800"
+          style={{ border: "none" }}
+          allowFullScreen
+        ></iframe>
       </main>
     </RootLayout>
   );
