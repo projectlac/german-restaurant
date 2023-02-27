@@ -114,7 +114,7 @@ a {
 /* /////////////////////////////////// */
 
 .home-slider .slick-slide.slick-active > div > div > div {
-  animation: mymove 3s;
+  animation: mymove 4s;
 }
 @keyframes mymove {
   from {
