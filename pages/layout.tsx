@@ -3,12 +3,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { ReactComponent as MySvgFile } from "@/assets/svgs/menu.svg";
 import Image from "next/image";
+import { useState } from "react";
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   const route = useRouter();
+  const [toggle, setToggle] = useState(false);
 
   return (
     <section className="flex flex-col md:flex-row">
@@ -43,6 +45,9 @@ export default function RootLayout({
             <span className={styles.logo}>LOGO</span>
             <span
               className={`${styles["menu-button"]} w-1/4 flex align-center justify-end`}
+              onClick={() => {
+                setToggle(!toggle);
+              }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +66,17 @@ export default function RootLayout({
             </span>
           </div>
         </div>
-        <div className={styles["menu-mobile"]}>
+        <div
+          onClick={() => {
+            setToggle(!toggle);
+          }}
+          className={`${styles["overlay"]} ${toggle ? styles["active"] : ""}`}
+        ></div>
+        <div
+          className={`${styles["menu-mobile"]} ${
+            toggle ? styles["active"] : ""
+          }`}
+        >
           <ul>
             <li
               className={route.asPath === "/" ? styles["navigator-active"] : ""}

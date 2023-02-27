@@ -1,3 +1,4 @@
+import BannerSlider from "@/src/components/BannerSlider";
 import styles from "@/styles/Home.module.scss";
 import { Inter } from "next/font/google";
 import Head from "next/head";
@@ -14,6 +15,7 @@ export default function Menu() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <BannerSlider />
         <div className={styles.iframeBox}>
           <iframe
             src="https://flowpaper.com/flipbook/https://icseindia.org/document/sample.pdf"

@@ -65,27 +65,46 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
     padding: 24px;
     background-color: #1e1e1e;
+    left: -80%;
+    transition: all 0.2s linear;
+    z-index: 2;
+    &.active {
+      left: 0;
+    }
+  }
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #544f4fb8;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: none;
+    backdrop-filter: blur(3px);
+    &.active {
+      display: block;
+    }
   }
 }
 .main {
   background-color: #161616;
-  height: 100vh;
   width: calc(100vw - 265px);
-
   box-sizing: border-box;
   overflow: hidden;
   overflow-y: auto;
+  height: 100vh;
   @include Mobile() {
     width: 100%;
     padding: 16px;
+    height: calc(100vh - 90px);
   }
   @include PC() {
     width: calc(100vw - 265px);
     padding: 50px;
+    height: 100vh;
   }
   .iframeBox {
     width: 100%;
@@ -96,6 +115,12 @@
     iframe {
       border-radius: 8px;
       overflow: hidden;
+      @include Mobile() {
+        height: 350px !important;
+      }
+      @include PC() {
+        height: 800px !important;
+      }
     }
   }
   &-gallery {
