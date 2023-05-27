@@ -14,13 +14,13 @@ export default function Menu() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <iframe
+        {/* <iframe
           src="https://flowpaper.com/flipbook/https://icseindia.org/document/sample.pdf"
           width="70%"
           height="800"
           style={{ border: "none" }}
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
       </main>
     </RootLayout>
   );
