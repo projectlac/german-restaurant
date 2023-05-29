@@ -6,6 +6,7 @@ import styles from "@/styles/Home.module.scss";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import RootLayout from "./layout";
+import Footer from "@/src/components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Menu() {
@@ -22,6 +23,7 @@ export default function Menu() {
         <Detail />
         <Hot />
         <Location />
+        <Footer />
       </main>
     </RootLayout>
   );

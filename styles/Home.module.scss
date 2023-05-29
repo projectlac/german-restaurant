@@ -1,3 +1,4 @@
+
 .introductions {
   height: 100vh;
   background: url("../assets/images/restaurant-interior1.png");
@@ -188,6 +189,7 @@
   .c2,
   .c3,
   .c6 {
+    background-color: #fff;
     padding: 42.33px 24px;
     h1 {
       font-family: "Philosopher";
@@ -235,37 +237,36 @@
   justify-content: space-between;
   &_content {
     width: calc(100vw - 52px - 52px - 465px - 57px);
-    border-top: 1px solid #C8935F;
-    border-bottom: 1px solid #C8935F;
+    border-top: 1px solid #c8935f;
+    border-bottom: 1px solid #c8935f;
     padding: 72px 0;
     display: flex;
     flex-wrap: wrap;
     h2 {
-    font-family: 'Philosopher';
+      font-family: "Philosopher";
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
       line-height: 64px;
       /* identical to box height, or 267% */
-    
+
       letter-spacing: 0.36em;
-    
+
       /* Denotive colour/Red/400 */
-    
-      color: #D3223A;
+
+      color: #d3223a;
       margin-bottom: 24px;
     }
 
     p {
-      font-family: 'Nunito Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 2;
-        /* identical to box height, or 0% */
-      
-      
-        color: #FFFFFF;
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 2;
+      /* identical to box height, or 0% */
+
+      color: #ffffff;
     }
 
     button {
@@ -286,7 +287,80 @@
       height: 40px;
     }
   }
-  &_box{
+  &_box {
     width: 50%;
+  }
+}
+
+.footer {
+  height: 644px;
+  background-color: #000;
+  background-image: url("../assets/images/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 210px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    h1 {
+      font-family: "Philosopher";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 52px;
+      line-height: 68px;
+      /* or 131% */
+
+      text-align: center;
+      letter-spacing: 0.22em;
+
+      color: #ffffff;
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+    p {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 39px;
+      /* or 244% */
+
+      text-align: center;
+      letter-spacing: 0.22em;
+
+      color: #ffffff;
+    }
+    button {
+      font-family: "Nunito Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+
+      text-align: center;
+
+      /* Denotive colour/Red/400 */
+
+      color: #d3223a;
+
+      width: 146px;
+      height: 48px;
+
+      /* Denotive colour/Red/400 */
+
+      border: 1px solid #d3223a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 32px 0;
+    }
   }
 }
