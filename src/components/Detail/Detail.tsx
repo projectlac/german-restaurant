@@ -14,11 +14,11 @@ function Detail() {
           RESTAURANT
         </h1>
         <p>
-          {home.detail1}
+          {home[3]}
           <br />
-          {home.detail2}
+          {home[4]}
           <br />
-          {home.detail3}
+          {home[5]}
         </p>
         <button>DISCOVER MORE</button>
       </div>

@@ -9,11 +9,11 @@ function Introductions() {
       <Header />
       <div className={styles.content}>
         <h1>
-          {home.title1}
+          {home[0]}
           <br />
-          {home.title2}
+          {home[1]}
           <br />
-          {home.title3}
+          {home[2]}
         </h1>
         <svg
           width="73"

@@ -14,18 +14,18 @@ function Location() {
           </p>
         </div>
         <div className={styles.location_box}>
-          <h2>{home.location1}</h2>
-          <p>{home.location2}</p>
+          <h2>{home[12]}</h2>
+          <p>{home[13]}</p>
         </div>
         <div className={styles.location_box}>
-          <h2>{home.location3}</h2>
-          <p>{home.location4}</p>
+          <h2>{home[14]}</h2>
+          <p>{home[15]}</p>
         </div>
         <div className={styles.location_box}>
-          <h2>{home.location5}</h2>
+          <h2>{home[16]}</h2>
           <p>
-            {home.location6} <br />
-            {home.location7}
+            {home[17]} <br />
+            {home[18]}
           </p>
         </div>
       </div>

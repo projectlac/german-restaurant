@@ -31,7 +31,7 @@ function Footer() {
         </div>
         <h1>MAKE A RESERVATION</h1>
         <p>
-          {home.footer1} <br /> {home.footer2}
+          {home[19]} <br /> {home[20]}
         </p>
 
         <button>DISCOVER MENU</button>
