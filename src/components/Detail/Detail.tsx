@@ -3,7 +3,9 @@ import Header from "../Header/Header";
 import styles from "@/styles/Home.module.scss";
 import image from "@/assets/images/1.png";
 import Image from "next/image";
+import useTrans from "@/pages/hook/useTrans";
 function Detail() {
+  const home = useTrans();
   return (
     <div className={styles.detail}>
       <div className={styles.detail_content}>
@@ -12,11 +14,11 @@ function Detail() {
           RESTAURANT
         </h1>
         <p>
-          Is a place where we provide customers with relax ambience, healthy{" "}
+          {home.detail1}
           <br />
-          Vietnamese food and professional service, making every meal with us an{" "}
+          {home.detail2}
           <br />
-          unforgettable experience
+          {home.detail3}
         </p>
         <button>DISCOVER MORE</button>
       </div>

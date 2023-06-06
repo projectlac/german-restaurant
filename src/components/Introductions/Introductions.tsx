@@ -1,14 +1,19 @@
 import React from "react";
 import Header from "../Header/Header";
 import styles from "@/styles/Home.module.scss";
+import useTrans from "@/pages/hook/useTrans";
 function Introductions() {
+  const home = useTrans();
   return (
     <div className={styles.introductions}>
       <Header />
       <div className={styles.content}>
         <h1>
-          SAVOR THE COLORFUL <br />
-          SIMPLICITY FOR A <br /> SMOOTH BEGINNING
+          {home.title1}
+          <br />
+          {home.title2}
+          <br />
+          {home.title3}
         </h1>
         <svg
           width="73"

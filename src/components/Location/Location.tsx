@@ -1,9 +1,9 @@
-import React from "react";
-import Header from "../Header/Header";
-import styles from "@/styles/Home.module.scss";
 import image from "@/assets/images/image 6.png";
+import useTrans from "@/pages/hook/useTrans";
+import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
 function Location() {
+  const home = useTrans();
   return (
     <div className={styles.location}>
       <div className={styles.location_content}>
@@ -14,21 +14,19 @@ function Location() {
           </p>
         </div>
         <div className={styles.location_box}>
-          <h2>DINNING</h2>
-          <p>
-            Indoor Dining & Outdoor <br /> Private & Terrace
-          </p>
+          <h2>{home.location1}</h2>
+          <p>{home.location2}</p>
         </div>
         <div className={styles.location_box}>
-          <h2>RESERVATION</h2>
-          <p>
-            Call 023053080508 <br />
-            Mail
-          </p>
+          <h2>{home.location3}</h2>
+          <p>{home.location4}</p>
         </div>
         <div className={styles.location_box}>
-          <h2>OPENING HOURS</h2>
-          <p>Monday - Sunday 12:00 to 22:00</p>
+          <h2>{home.location5}</h2>
+          <p>
+            {home.location6} <br />
+            {home.location7}
+          </p>
         </div>
       </div>
       <div className={styles.location_image}>

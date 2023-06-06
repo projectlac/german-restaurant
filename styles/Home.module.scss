@@ -1,6 +1,5 @@
-
 .introductions {
-  height: 100vh;
+  height: 550px;
   background: url("../assets/images/restaurant-interior1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,29 +7,31 @@
 
   .navigator {
     background-color: transparent;
-    height: 52px;
+    height: 72px;
     color: #fff;
     border-bottom: 2px solid #262626;
     ul {
-      height: 52px;
-      padding: 0px 51px;
+      height: 72px;
+      padding: 0px 15px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       li {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 900;
         text-transform: uppercase;
         transition: all 0.2s linear;
         display: flex;
         align-items: center;
+
         p {
           margin: 0;
           padding: 0;
           font-family: "Nunito Sans";
           font-style: normal;
           font-weight: 700;
-          font-size: 16px;
+          font-size: 12px;
           line-height: 24px;
           margin-left: 11.75px;
         }
@@ -43,13 +44,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: calc(100vh - 52px);
+    height: 550px;
     h1 {
       font-family: "Philosopher";
       font-style: normal;
       font-weight: 400;
-      font-size: 52px;
-      line-height: 68px;
+      font-size: 18px;
+      line-height: 2;
       /* or 131% */
 
       text-align: center;
@@ -88,17 +89,18 @@
   }
 }
 .detail {
-  padding: 200px 52px;
+  padding: 50px 15px;
   display: flex;
   background: #000;
+  flex-direction: column-reverse;
   &_content {
-    width: calc(100vw - 52px - 52px - 553px);
+    width: 100%;
     h1 {
       font-family: "Philosopher";
       font-style: normal;
       font-weight: 400;
-      font-size: 48px;
-      line-height: 64px;
+      font-size: 30px;
+      line-height: 1.7;
       /* or 133% */
 
       letter-spacing: 0.36em;
@@ -111,8 +113,8 @@
       font-family: "Nunito Sans";
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 3;
+      font-size: 12px;
+      line-height: 2.5;
       /* or 25% */
 
       color: #ffffff;
@@ -138,14 +140,18 @@
 }
 .hot {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 326px 1fr 326px 1fr 326px 1fr;
   gap: 0px 0px;
   grid-template-areas:
-    "left c1 c2"
-    "left c3 c4"
-    "left c5 c6";
-  height: 980px;
+    "left"
+    "c1"
+    "c2"
+    "c4"
+    "c3"
+    "c5"
+    "c6";
+
   .left {
     grid-area: left;
     background: url("../assets/images/flat-lay-tray-with-vientamese-food\ 1.png");
@@ -159,7 +165,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 326.67px;
+    height: 326px;
+    margin-top: 15px;
   }
   .c2 {
     grid-area: c2;
@@ -173,7 +180,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 326.67px;
+    height: 326px;
   }
   .c5 {
     grid-area: c5;
@@ -181,7 +188,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 326.67px;
+    height: 326px;
   }
   .c6 {
     grid-area: c6;
@@ -231,12 +238,13 @@
   }
 }
 .location {
-  padding: 200px 52px;
+  padding: 50px 15px;
   display: flex;
   background: #000;
   justify-content: space-between;
+  flex-direction: column-reverse;
   &_content {
-    width: calc(100vw - 52px - 52px - 465px - 57px);
+    width: 100%;
     border-top: 1px solid #c8935f;
     border-bottom: 1px solid #c8935f;
     padding: 72px 0;
@@ -246,16 +254,10 @@
       font-family: "Philosopher";
       font-style: normal;
       font-weight: 400;
-      font-size: 24px;
-      line-height: 64px;
-      /* identical to box height, or 267% */
-
+      font-size: 20px;
+      line-height: 1.4;
       letter-spacing: 0.36em;
-
-      /* Denotive colour/Red/400 */
-
       color: #d3223a;
-      margin-bottom: 24px;
     }
 
     p {
@@ -265,7 +267,7 @@
       font-size: 14px;
       line-height: 2;
       /* identical to box height, or 0% */
-
+      margin-bottom: 15px;
       color: #ffffff;
     }
 
@@ -288,7 +290,7 @@
     }
   }
   &_box {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -312,8 +314,8 @@
       font-family: "Philosopher";
       font-style: normal;
       font-weight: 400;
-      font-size: 52px;
-      line-height: 68px;
+      font-size: 29px;
+      line-height: 2;
       /* or 131% */
 
       text-align: center;
@@ -360,6 +362,402 @@
       align-items: center;
       justify-content: center;
       margin: 32px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .introductions {
+    height: 100vh;
+    background: url("../assets/images/restaurant-interior1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    .navigator {
+      background-color: transparent;
+      height: 52px;
+      color: #fff;
+      border-bottom: 2px solid #262626;
+
+      ul {
+        height: 52px;
+        padding: 0px 51px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+          font-size: 20px;
+          font-weight: 900;
+          text-transform: uppercase;
+          transition: all 0.2s linear;
+          display: flex;
+          align-items: center;
+
+          p {
+            margin: 0;
+            padding: 0;
+            font-family: "Nunito Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: 11.75px;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: calc(100vh - 52px);
+
+      h1 {
+        font-family: "Philosopher";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 68px;
+        /* or 131% */
+
+        text-align: center;
+        letter-spacing: 0.22em;
+
+        color: #ffffff;
+        margin-bottom: 32px;
+      }
+
+      button {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        text-align: center;
+
+        /* Denotive colour/Red/400 */
+
+        color: #d3223a;
+
+        width: 146px;
+        height: 48px;
+
+        /* Denotive colour/Red/400 */
+
+        border: 1px solid #d3223a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        margin-bottom: 142px;
+      }
+    }
+  }
+
+  .detail {
+    padding: 200px 52px;
+    display: flex;
+    background: #000;
+    flex-direction: row;
+    &_content {
+      width: calc(100vw - 52px - 52px - 553px);
+
+      h1 {
+        font-family: "Philosopher";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        /* or 133% */
+
+        letter-spacing: 0.36em;
+
+        /* Denotive colour/Red/400 */
+
+        color: #d3223a;
+      }
+
+      p {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 3;
+        /* or 25% */
+
+        color: #ffffff;
+      }
+
+      button {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        text-align: center;
+
+        /* Shades/White */
+
+        color: #ffffff;
+        border-bottom: 2px solid #d3223a;
+        width: 98px;
+        height: 40px;
+      }
+    }
+  }
+
+  .hot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "left c1 c2"
+      "left c3 c4"
+      "left c5 c6";
+ 
+    .left {
+      grid-area: left;
+      background: url("../assets/images/flat-lay-tray-with-vientamese-food\ 1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .c1 {
+      grid-area: c1;
+      background: url("../assets/images/sushi-dish-asian-restaurant\ 1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+
+      margin-top: 0;
+    }
+
+    .c2 {
+      grid-area: c2;
+    }
+
+    .c3 {
+      grid-area: c3;
+    }
+
+    .c4 {
+      grid-area: c4;
+      background: url("../assets/images/sushi-dish-asian-restaurant\ 1\ \(1\).png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+
+    .c5 {
+      grid-area: c5;
+      background: url("../assets/images/sushi-dish-asian-restaurant\ 1\ \(2\).png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+
+    .c6 {
+      grid-area: c6;
+    }
+
+    .c2,
+    .c3,
+    .c6 {
+      background-color: #fff;
+      padding: 42.33px 24px;
+
+      h1 {
+        font-family: "Philosopher";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 64px;
+        /* identical to box height, or 200% */
+
+        letter-spacing: 0.12em;
+
+        color: #000000;
+      }
+
+      p {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 3;
+        /* or 29% */
+
+        color: #000000;
+      }
+
+      button {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        text-align: center;
+
+        color: #000000;
+        width: 98px;
+        height: 40px;
+        border-bottom: 2px solid #d3223a;
+      }
+    }
+  }
+
+  .location {
+    padding: 200px 52px;
+    display: flex;
+    background: #000;
+    justify-content: space-between;
+    flex-direction: row;
+    &_content {
+      width: calc(100vw - 52px - 52px - 465px - 57px);
+      border-top: 1px solid #c8935f;
+      border-bottom: 1px solid #c8935f;
+      padding: 72px 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      h2 {
+        font-family: "Philosopher";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 64px;
+        /* identical to box height, or 267% */
+
+        letter-spacing: 0.36em;
+
+        /* Denotive colour/Red/400 */
+
+        color: #d3223a;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+        /* identical to box height, or 0% */
+
+        color: #ffffff;
+      }
+
+      button {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        text-align: center;
+
+        /* Shades/White */
+
+        color: #ffffff;
+        border-bottom: 2px solid #d3223a;
+        width: 98px;
+        height: 40px;
+      }
+    }
+
+    &_box {
+      width: 50%;
+    }
+  }
+
+  .footer {
+    height: 644px;
+    background: url("../assets/images/restaurant-interior1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 210px;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      h1 {
+        font-family: "Philosopher";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 68px;
+        /* or 131% */
+
+        text-align: center;
+        letter-spacing: 0.22em;
+
+        color: #ffffff;
+        margin-bottom: 32px;
+        margin-top: 32px;
+      }
+
+      p {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 39px;
+        /* or 244% */
+
+        text-align: center;
+        letter-spacing: 0.22em;
+
+        color: #ffffff;
+      }
+
+      button {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+
+        text-align: center;
+
+        /* Denotive colour/Red/400 */
+
+        color: #d3223a;
+
+        width: 146px;
+        height: 48px;
+
+        /* Denotive colour/Red/400 */
+
+        border: 1px solid #d3223a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 32px 0;
+      }
     }
   }
 }

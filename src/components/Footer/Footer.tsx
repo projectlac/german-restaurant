@@ -1,7 +1,9 @@
 import React from "react";
 
 import styles from "@/styles/Home.module.scss";
+import useTrans from "@/pages/hook/useTrans";
 function Footer() {
+  const home = useTrans();
   return (
     <div className={styles.footer}>
       <div className={styles.content}>
@@ -29,7 +31,7 @@ function Footer() {
         </div>
         <h1>MAKE A RESERVATION</h1>
         <p>
-          Please call out direct line at....... <br /> you may also email us at
+          {home.footer1} <br /> {home.footer2}
         </p>
 
         <button>DISCOVER MENU</button>
