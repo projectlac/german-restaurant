@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import styles from "@/styles/Home.module.scss";
 import LightGallery from "lightgallery/react";
-import menu from "./../../../assets/images/menu.png";
+import menu from "./../../../public/menu.png";
 // import styles
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
