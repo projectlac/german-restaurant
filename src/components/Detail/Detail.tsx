@@ -1,11 +1,9 @@
-import React from "react";
-import Header from "../Header/Header";
-import styles from "@/styles/Home.module.scss";
 import image from "@/assets/images/1.png";
+import { useAppContext } from "@/contexts/state";
+import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
-import useTrans from "@/pages/hook/useTrans";
 function Detail() {
-  const home = useTrans();
+  const { dataLang } = useAppContext();
   return (
     <div className={styles.detail}>
       <div className={styles.detail_content}>
@@ -14,11 +12,11 @@ function Detail() {
           RESTAURANT
         </h1>
         <p>
-          {home[3]}
+          {dataLang[3]}
           <br />
-          {home[4]}
+          {dataLang[4]}
           <br />
-          {home[5]}
+          {dataLang[5]}
         </p>
         <button>DISCOVER MORE</button>
       </div>

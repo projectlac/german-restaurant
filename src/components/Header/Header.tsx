@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/Home.module.scss";
+import { useAppContext } from "@/contexts/state";
 function Header() {
+  const { changeLanguage } = useAppContext();
+  const [lang, setLang] = useState<string>("DE");
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    changeLanguage(e.target.value);
+    setLang(e.target.value);
+    localStorage.setItem("lang", e.target.value);
+  };
+
+  useEffect(() => {
+    const langLocal = localStorage.getItem("lang");
+    if (langLocal) {
+      setLang(langLocal);
+    } else {
+      setLang("DE");
+    }
+  }, []);
+
+  const langList = [
+    {
+      value: "DE",
+    },
+    { value: "EN" },
+  ];
   return (
     <nav className={styles.navigator}>
       <ul>
@@ -54,6 +78,15 @@ function Header() {
           </svg>
 
           <p>023053080508</p>
+        </li>
+        <li>
+          <select id="countries" className="" onChange={handleChange}>
+            {langList.map((d: any, i: number) => (
+              <option value={d.value} selected={d === lang} key={i}>
+                {d?.value}
+              </option>
+            ))}
+          </select>
         </li>
       </ul>
     </nav>

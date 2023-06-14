@@ -1,9 +1,9 @@
 import image from "@/assets/images/image 6.png";
-import useTrans from "@/pages/hook/useTrans";
+import { useAppContext } from "@/contexts/state";
 import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
 function Location() {
-  const home = useTrans();
+  const { dataLang } = useAppContext();
   return (
     <div className={styles.location}>
       <div className={styles.location_content}>
@@ -14,18 +14,18 @@ function Location() {
           </p>
         </div>
         <div className={styles.location_box}>
-          <h2>{home[12]}</h2>
-          <p>{home[13]}</p>
+          <h2>{dataLang[12]}</h2>
+          <p>{dataLang[13]}</p>
         </div>
         <div className={styles.location_box}>
-          <h2>{home[14]}</h2>
-          <p>{home[15]}</p>
+          <h2>{dataLang[14]}</h2>
+          <p>{dataLang[15]}</p>
         </div>
         <div className={styles.location_box}>
-          <h2>{home[16]}</h2>
+          <h2>{dataLang[16]}</h2>
           <p>
-            {home[17]} <br />
-            {home[18]}
+            {dataLang[17]} <br />
+            {dataLang[18]}
           </p>
         </div>
       </div>

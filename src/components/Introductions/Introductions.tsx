@@ -1,19 +1,34 @@
 import React from "react";
 import Header from "../Header/Header";
 import styles from "@/styles/Home.module.scss";
-import useTrans from "@/pages/hook/useTrans";
+import LightGallery from "lightgallery/react";
+import menu from "@/assets/images/menu.png";
+// import styles
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+// If you want you can use SCSS instead of css
+import "lightgallery/scss/lightgallery.scss";
+import "lightgallery/scss/lg-zoom.scss";
+
+// import plugins if you need
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
+import { useAppContext } from "@/contexts/state";
 function Introductions() {
-  const home = useTrans();
+  const { dataLang } = useAppContext();
   return (
     <div className={styles.introductions}>
       <Header />
       <div className={styles.content}>
         <h1>
-          {home[0]}
+          {dataLang[0]}
           <br />
-          {home[1]}
+          {dataLang[1]}
           <br />
-          {home[2]}
+          {dataLang[2]}
         </h1>
         <svg
           width="73"
@@ -35,7 +50,11 @@ function Introductions() {
             fill="#D3223A"
           />
         </svg>
-        <button>DISCOVER MENU</button>
+        <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
+          <a href={menu.src}>
+            <button>DISCOVER MENU</button>
+          </a>
+        </LightGallery>
       </div>
     </div>
   );

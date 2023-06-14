@@ -1,9 +1,7 @@
-import React from "react";
-
+import { useAppContext } from "@/contexts/state";
 import styles from "@/styles/Home.module.scss";
-import useTrans from "@/pages/hook/useTrans";
 function Footer() {
-  const home = useTrans();
+  const { dataLang } = useAppContext();
   return (
     <div className={styles.footer}>
       <div className={styles.content}>
@@ -31,7 +29,7 @@ function Footer() {
         </div>
         <h1>MAKE A RESERVATION</h1>
         <p>
-          {home[19]} <br /> {home[20]}
+          {dataLang[19]} <br /> {dataLang[20]}
         </p>
 
         <button>DISCOVER MENU</button>
