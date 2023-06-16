@@ -1,4 +1,4 @@
-import image from "@/assets/images/1.png";
+import image from "./../../../public/npho.JPG";
 import { useAppContext } from "@/contexts/state";
 import styles from "@/styles/Home.module.scss";
 import Image from "next/image";

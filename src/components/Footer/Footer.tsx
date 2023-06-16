@@ -32,7 +32,10 @@ function Footer() {
           {dataLang[19]} <br /> {dataLang[20]}
         </p>
 
-        <button>DISCOVER MENU</button>
+        <a href="tel:023053080508">
+          <button>DISCOVER MENU</button>
+        </a>
+
         <svg
           width="73"
           height="16"
