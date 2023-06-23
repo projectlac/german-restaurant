@@ -51,6 +51,7 @@ const home = [
   "Monday - Sunday 12:00 to 22:00",
   "",
   "Please call out direct line at.......",
-  "you may also email us at"
+  "you may also email us at",
+  "Call now"
 ]
 export default home;
