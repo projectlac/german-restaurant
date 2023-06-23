@@ -5,5 +5,6 @@ declare module "*.svg" {
   export default src;
 }
 declare module '*.jpg';
+declare module '*.png';
 declare module '*.JPG';
 declare module '*.webp';

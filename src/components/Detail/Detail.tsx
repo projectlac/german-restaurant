@@ -1,4 +1,4 @@
-import image from "@/assets/npho.webp";
+import image from "@/assets/Images/Home/1.jpg";
 import { useAppContext } from "@/contexts/state";
 import styles from "@/styles/Home.module.scss";
 import Image from "next/image";
