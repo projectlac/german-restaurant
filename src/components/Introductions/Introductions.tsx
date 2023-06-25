@@ -2,7 +2,16 @@ import React from "react";
 import Header from "../Header/Header";
 import styles from "@/styles/Home.module.scss";
 import LightGallery from "lightgallery/react";
-import menu from "./../../../public/menu.png";
+import menu1 from "./../../../public/Menu/1.png";
+import menu2 from "./../../../public/Menu/3.png";
+import menu3 from "./../../../public/Menu/4.png";
+import menu4 from "./../../../public/Menu/5.png";
+import menu5 from "./../../../public/Menu/6.png";
+import menu6 from "./../../../public/Menu/7.png";
+import menu7 from "./../../../public/Menu/8.png";
+import menu8 from "./../../../public/Menu/9.png";
+import menu9 from "./../../../public/Menu/10.png";
+
 // import styles
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
@@ -17,6 +26,7 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
 import { useAppContext } from "@/contexts/state";
+import Image from "next/image";
 function Introductions() {
   const { dataLang } = useAppContext();
   return (
@@ -50,9 +60,89 @@ function Introductions() {
             fill="#D3223A"
           />
         </svg>
+
         <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
-          <a href={menu.src}>
+          <a href={menu1.src}>
             <button>DISCOVER MENU</button>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 1"
+              src={menu1.src}
+            />
+          </a>
+          <a href={menu2.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 2"
+              src={menu2.src}
+            />
+          </a>
+          <a href={menu3.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 3"
+              src={menu3.src}
+            />
+          </a>
+          <a href={menu4.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 4"
+              src={menu4.src}
+            />
+          </a>
+          <a href={menu5.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 5"
+              src={menu5.src}
+            />
+          </a>
+          <a href={menu6.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 6"
+              src={menu6.src}
+            />
+          </a>
+          <a href={menu7.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 7"
+              src={menu7.src}
+            />
+          </a>
+          <a href={menu8.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 8"
+              src={menu8.src}
+            />
+          </a>
+          <a href={menu9.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 9"
+              src={menu9.src}
+            />
           </a>
         </LightGallery>
       </div>
