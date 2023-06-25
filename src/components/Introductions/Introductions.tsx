@@ -11,6 +11,8 @@ import menu6 from "./../../../public/Menu/7.png";
 import menu7 from "./../../../public/Menu/8.png";
 import menu8 from "./../../../public/Menu/9.png";
 import menu9 from "./../../../public/Menu/10.png";
+import menu10 from "./../../../public/Menu/11.png";
+import menu11 from "./../../../public/Menu/12.png";
 
 // import styles
 import "lightgallery/css/lightgallery.css";
@@ -142,6 +144,24 @@ function Introductions() {
               className="hidden"
               alt="Page 9"
               src={menu9.src}
+            />
+          </a>
+          <a href={menu10.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 10"
+              src={menu10.src}
+            />
+          </a>
+          <a href={menu11.src}>
+            <Image
+              width="250"
+              height="250"
+              className="hidden"
+              alt="Page 11"
+              src={menu11.src}
             />
           </a>
         </LightGallery>
