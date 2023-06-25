@@ -63,7 +63,7 @@ function Introductions() {
 
         <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
           <a href={menu1.src}>
-            <button>DISCOVER MENU</button>
+            <button>{dataLang[22]}</button>
             <Image
               width="250"
               height="250"

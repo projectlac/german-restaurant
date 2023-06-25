@@ -68,6 +68,7 @@ const home = [
   "Dienstags ist Ruhetag",
   "Reservierung ",
   "Per Telefon: 02305 3080 508",
-  "Anrufen"
+  "Anrufen",
+"Speisekarte"
 ]
 export default home;
