@@ -80,9 +80,9 @@ function Header() {
           <p>023053080508</p>
         </li>
         <li>
-          <select id="countries" className="" onChange={handleChange}>
+          <select id="countries" className="" onChange={handleChange} value={lang}>
             {langList.map((d: any, i: number) => (
-              <option value={d.value} selected={d === lang} key={i}>
+              <option value={d.value} key={i}>
                 {d?.value}
               </option>
             ))}
