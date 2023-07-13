@@ -18,8 +18,10 @@ export default function Menu() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="/thirteen.svg" /> */}
         <meta property="og:image" content="./ogImage.jpg" />
-        <meta property="og:title" content="ĐisĂnĐi Restaurant" />
-        <meta property="og:description" content="ĐisĂnĐi Restaurant - Vietnamese Restaurant & Bar" />
+        <meta property="og:title" content="ĐiĂnĐi Restaurant" />
+        <meta property="og:description" content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar" />
+        <meta property="og:image:alt " content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar" />
+
    
         <meta property="og:locale" content="de_DE" />
         <meta property="og:locale:alternate" content="en_GB" />
