@@ -13,16 +13,21 @@ export default function Menu() {
   return (
     <RootLayout>
       <Head>
-        <title>ĐiĂnĐi</title>
+        <title>DIANDI RESTAURANT</title>
         <meta name="description" content="Menu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <link rel="icon" href="/thirteen.svg" /> */}
+        <link rel="icon" href="/restaurant.ico" />
         <meta property="og:image" content="./ogImage.jpg" />
         <meta property="og:title" content="ĐiĂnĐi Restaurant" />
-        <meta property="og:description" content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar" />
-        <meta property="og:image:alt " content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar" />
+        <meta
+          property="og:description"
+          content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar"
+        />
+        <meta
+          property="og:image:alt "
+          content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar"
+        />
 
-   
         <meta property="og:locale" content="de_DE" />
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="es_ES" />
