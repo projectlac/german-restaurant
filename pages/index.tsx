@@ -16,7 +16,7 @@ export default function Menu() {
         <title>DIANDI RESTAURANT</title>
         <meta name="description" content="Menu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/restaurant.ico" />
+        <link rel="icon" href="/food.ico" />
         <meta property="og:image" content="./ogImage.jpg" />
         <meta property="og:title" content="ĐiĂnĐi Restaurant" />
         <meta
