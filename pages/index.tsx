@@ -18,14 +18,14 @@ export default function Menu() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/food.ico" />
         <meta property="og:image" content="./ogImage.jpg" />
-        <meta property="og:title" content="ĐiĂnĐi Restaurant" />
+        <meta property="og:title" content="DIANDI Restaurant" />
         <meta
           property="og:description"
-          content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar"
+          content="DIANDI Restaurant - Vietnamese Restaurant & Bar"
         />
         <meta
           property="og:image:alt "
-          content="ĐiĂnĐi Restaurant - Vietnamese Restaurant & Bar"
+          content="DIANDI Restaurant - Vietnamese Restaurant & Bar"
         />
 
         <meta property="og:locale" content="de_DE" />

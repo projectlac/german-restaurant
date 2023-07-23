@@ -188,7 +188,7 @@
   }
   .c4 {
     grid-area: c4;
-    background: url("../assets/Images/Home/41.webp");
+    background: url("../assets/Images/Home/sushi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -565,7 +565,7 @@
 
     .c4 {
       grid-area: c4;
-      background: url("../assets/Images/Home/41.webp");
+      background: url("../assets/Images/Home/sushi.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -634,13 +634,13 @@
   }
 
   .location {
-    padding:100px 52px;
+    padding: 100px 52px;
     display: flex;
     background: #000;
     justify-content: space-between;
     flex-direction: row;
     &_content {
-      width:75%;
+      width: 75%;
       border-top: 1px solid #c8935f;
       border-bottom: 1px solid #c8935f;
       padding: 45px 0;
@@ -651,8 +651,8 @@
         font-family: "Philosopher";
         font-style: normal;
         font-weight: 400;
-          font-size: 20px;
-            line-height: 40px;
+        font-size: 20px;
+        line-height: 40px;
         /* identical to box height, or 267% */
 
         letter-spacing: 0.36em;
@@ -938,7 +938,7 @@
       background: url("../assets/Images/Home/2.png");
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: -133px;
     }
 
     .c1 {
@@ -962,7 +962,7 @@
 
     .c4 {
       grid-area: c4;
-      background: url("../assets/Images/Home/41.webp");
+      background: url("../assets/Images/Home/sushi.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -986,7 +986,7 @@
     .c3,
     .c6 {
       background-color: #fff;
-      padding: 42.33px 24px;
+      padding: 17.33px 24px;
 
       h1 {
         font-family: "Philosopher";
@@ -1006,7 +1006,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 3;
+        line-height: 2;
         /* or 29% */
 
         color: #000000;

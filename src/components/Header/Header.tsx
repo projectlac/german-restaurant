@@ -45,7 +45,7 @@ function Header() {
               fill="white"
             />
           </svg>
-          <p>LangeStr.40 44579 Castop Rauxel</p>
+          <p>LangeStr.40 44579 Castrop Rauxel</p>
         </li>
         <li>
           <svg
@@ -61,7 +61,9 @@ function Header() {
             />
           </svg>
 
-          <p>023053080508</p>
+          <a href="tel:023053080508">
+            <p>023053080508</p>
+          </a>
         </li>
         <li>
           <svg
@@ -77,10 +79,17 @@ function Header() {
             />
           </svg>
 
-          <p>023053080508</p>
+          <a href="mailto:diandi.castrop@gmail.com">
+            <p>diandi.castrop@gmail.com</p>
+          </a>
         </li>
         <li>
-          <select id="countries" className="" onChange={handleChange} value={lang}>
+          <select
+            id="countries"
+            className=""
+            onChange={handleChange}
+            value={lang}
+          >
             {langList.map((d: any, i: number) => (
               <option value={d.value} key={i}>
                 {d?.value}
