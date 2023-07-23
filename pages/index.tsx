@@ -20,6 +20,10 @@ export default function Menu() {
         <meta property="og:image" content="./ogImage.jpg" />
         <meta property="og:title" content="DIANDI Restaurant" />
         <meta
+          name="google-site-verification"
+          content="1Cs8AP_A1f5clocr9Zn43U9yaBv90jwnjZYJy0MKbR4"
+        />
+        <meta
           property="og:description"
           content="DIANDI Restaurant - Vietnamese Restaurant & Bar"
         />
