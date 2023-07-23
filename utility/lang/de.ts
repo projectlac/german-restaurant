@@ -69,6 +69,7 @@ const home = [
   "Reservierung ",
   "Per Telefon: 02305 3080 508",
   "Anrufen",
-"Speisekarte"
-]
+  "Speisekarte",
+  "Abholung und Lieferung",
+];
 export default home;

@@ -16,6 +16,7 @@ function Location() {
         <div className={styles.location_box}>
           <h2>{dataLang[12]}</h2>
           <p>{dataLang[13]}</p>
+          <p>{dataLang[23]}</p>
         </div>
         <div className={styles.location_box}>
           <h2>{dataLang[14]}</h2>

@@ -53,6 +53,7 @@ const home = [
   "Please call out direct line at.......",
   "you may also email us at",
   "Call now",
-  "DISCOVER MENU"
+  "DISCOVER MENU",
+  "Pickup and Delivery"
 ]
 export default home;
