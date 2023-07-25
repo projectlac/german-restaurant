@@ -3,7 +3,7 @@ import Header from "../Header/Header";
 import styles from "@/styles/Home.module.scss";
 import LightGallery from "lightgallery/react";
 import menu1 from "./../../../public/Menu/1.png";
-import menu2 from "./../../../public/Menu/3.png";
+import menu2 from "./../../../public/Menu/menu_page-0003.jpg";
 import menu3 from "./../../../public/Menu/4.png";
 import menu4 from "./../../../public/Menu/5.png";
 import menu5 from "./../../../public/Menu/6.png";
