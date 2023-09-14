@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import RootLayout from "./layout";
 import Footer from "@/src/components/Footer/Footer";
+import Notification from "@/src/components/Notification/Notification";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Menu() {
@@ -37,6 +38,7 @@ export default function Menu() {
         <meta property="og:locale:alternate" content="es_ES" />
       </Head>
       <main className={styles.main}>
+        <Notification />
         <Introductions />
         <Detail />
         <Hot />
