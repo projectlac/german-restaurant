@@ -41,7 +41,7 @@ export default function Notification() {
                 fontSize: "16px",
               }}
             >
-              Wir freuen uns, Sie ab dem 2. Januar bei uns begrüßen zu dürfen.
+              Wir freuen uns, Sie ab dem 3. Januar bei uns begrüßen zu dürfen.
               Eine schöne Weihnachtszeit und ein frohes neues Jahr wünschen wir
               Ihnen.
               <br />
