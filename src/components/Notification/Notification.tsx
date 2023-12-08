@@ -31,7 +31,8 @@ export default function Notification() {
                 mt: 2,
               }}
             >
-              Liebe Gäste, von 24.09. bis 29.09.2023 haben wir Urlaub.
+              Liebe Gäste, von 24.12-26.12.2023 und 1.1-2.1.2024 haben wir
+              Weihnachts- und Neujahrsfeier.
             </Typography>
             <br />
             <Typography
@@ -40,8 +41,10 @@ export default function Notification() {
                 fontSize: "16px",
               }}
             >
-              Wir freuen uns, Sie ab dem 30. September bei uns begrüßen zu
-              dürfen. Eine gute Zeit wünschen wir Ihnen. <br />
+              Wir freuen uns, Sie ab dem 2. Januar bei uns begrüßen zu dürfen.
+              Eine schöne Weihnachtszeit und ein frohes neues Jahr wünschen wir
+              Ihnen.
+              <br />
               <br />
               Di An Di Team
             </Typography>
