@@ -31,8 +31,8 @@ export default function Notification() {
                 mt: 2,
               }}
             >
-              Liebe Gäste, von 24.12-26.12.2023 und 1.1-2.1.2024 haben wir
-              Weihnachts- und Neujahrsfeier.
+              Liebe Gäste, von 31.12.2023 haben wir Weihnachts- und
+              Neujahrsfeier.
             </Typography>
             <br />
             <Typography
