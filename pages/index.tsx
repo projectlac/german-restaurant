@@ -38,7 +38,7 @@ export default function Menu() {
         <meta property="og:locale:alternate" content="es_ES" />
       </Head>
       <main className={styles.main}>
-        <Notification />
+        {/* <Notification /> */}
         <Introductions />
         <Detail />
         <Hot />
